@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@media (max-height: 940px) {
+    h2{
+        font-size: 2em;
+    }
+}
+h2{
+    margin-left: 50px;
+}
+.fa{
+    font-size: 35px;
+    margin: 0 30px;
+}
+.fa-quote-left{
+    font-size: 20px;
+    margin: 0;
+}
+.main-q{
+    height: calc(100vh - 62.45px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quote-box{
+    max-width: 500px;
+    padding: 20px;
+}
+.quote-text{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    
+} 
+
+.author{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+}
+.buton{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn{
+    color: white;
+}
+.btn:hover{
+    color: lightgray;
+}
+button:active, .main-q,.btn{
+    transition: background-color 3s;
+}
+button:active, span,i,h2,p{
+    transition: color 3s;
+}
+
+/*screen phone*/
+@media (max-width: 800px){
+    h2{
+        font-size: 25px; 
+        margin:  8px 0; 
+    }
+    .btn:active{
+        transition: background-color 3s;
+    }
+    .fa{
+        font-size: 25px;
+        
+    }
+    .fa-quote-left{
+        font-size: 8px;
+    }
+    .quote-box{
+        padding: 5px;
+    }
+    .card{
+        width: 500px;
+    }
+    .card-text{
+        font-size: 10px;
+    }
+    .author{
+        font-size: 7px;
+    }
+    .btn{
+        font-size: 8px;
+    }
+    
+}
+
+@media (max-width: 500px){
+    h2{
+        font-size: 20px;
+        margin: 11px 0;
+        
+    }
+    
+    .card{
+        width: 300px;
+    }
+    .card-text{
+        font-size: 15px;
+    }
+    .author{
+        font-size: 10px;
+    }
+    .btn{
+        font-size: 13px;
+    }
+    .fa{
+        font-size: 20px;
+        
+    }
+    .fa-quote-left{
+        font-size: 15px;
+    }
+    .navbar-nav{
+        flex-direction: row;
+    }
+    .btn:active{
+        transition: background-color 3s;
+    }
+}
